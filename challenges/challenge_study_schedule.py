@@ -13,7 +13,8 @@ def study_schedule(permanence_period, target_time):
             best_time += 1
     return best_time
 
-# Reference of the Backslash (\) used on lines 2 and 8 below; this is used to continue the condition on the next line.
+# Reference of the Backslash (\) used on lines 2 and 8 below;
+# this is used to continue the condition on the next line.
 # https://developer.rhino3d.com/guides/rhinopython/python-statements/#:~:text=You%20cannot%20split%20a%20statement%20into%20multiple%20lines%20in%20Python,continued%20on%20the%20next%20line.
 
 
