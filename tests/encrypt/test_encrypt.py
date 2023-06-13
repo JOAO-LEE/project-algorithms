@@ -9,11 +9,11 @@ def test_encrypt_message():
     with pytest.raises(TypeError, match="tipo inválido para message"):
         encrypt_message(message=12312312, key=2)
 
-    encryptedBondinhoEven = encrypt_message("bondinho", 2)
-    assert encryptedBondinhoEven == "ohnidn_ob"
+    encrypted_bondinho_even = encrypt_message("bondinho", 2)
+    assert encrypted_bondinho_even == "ohnidn_ob"
 
-    encryptedBondinhoOdd = encrypt_message("bondinho", 5)
-    assert encryptedBondinhoOdd == "idnob_ohn"
+    encrypted_bondinho_odd = encrypt_message("bondinho", 5)
+    assert encrypted_bondinho_odd == "idnob_ohn"
 
-    encryptedBondinhoOdd = encrypt_message("bondinho", 10)
-    assert encryptedBondinhoOdd == "ohnidnob"
+    encrypted_bondinho_out_of_range = encrypt_message("bondinho", 10)
+    assert encrypted_bondinho_out_of_range == "ohnidnob"
